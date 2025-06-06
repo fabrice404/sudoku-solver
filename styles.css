@@ -1,0 +1,59 @@
+body {}
+
+td {
+  text-align    : center;
+  vertical-align: middle;
+}
+
+.sudoku {
+  border-collapse: collapse;
+}
+
+.sudoku>tr:nth-child(1)>td {
+  border-top: 2px solid #333;
+}
+
+.sudoku>tr:nth-child(3n)>td {
+  border-bottom: 2px solid #333;
+}
+
+.sudoku>tr>td:nth-child(1) {
+  border-left: 2px solid #333;
+}
+
+.sudoku>tr>td:nth-child(3n) {
+  border-right: 2px solid #333;
+}
+
+.sudoku>tr>td>table {
+  border-collapse: collapse;
+}
+
+.cell {
+  min-width : 49px;
+  min-height: 49px;
+}
+
+.sub-cell {
+  width : 15px;
+  height: 15px;
+  border: 1px solid #ddd;
+}
+
+a {
+  text-decoration: none;
+  color          : inherit;
+}
+
+.solved {
+  background-color: #00d493;
+  color           : #ffffff;
+}
+
+.enabled {
+  color: #007498
+}
+
+.disabled {
+  color: #ddd;
+}
