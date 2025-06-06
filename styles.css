@@ -1,4 +1,8 @@
-body {}
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+body {
+  font-family: "Funnel Display", sans-serif;
+}
 
 td {
   text-align    : center;
@@ -30,19 +34,24 @@ td {
 }
 
 .cell {
-  min-width : 49px;
-  min-height: 49px;
+  min-width : 65px;
+  height: 65px;
 }
 
 .sub-cell {
-  width : 15px;
-  height: 15px;
-  border: 1px solid #ddd;
+  width      : 20px;
+  height     : 20px;
+  line-height: 20px;
+  border     : 1px solid #ddd;
 }
 
 a {
   text-decoration: none;
   color          : inherit;
+}
+
+button {
+  margin-top: 10px;
 }
 
 .solved {
