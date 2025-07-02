@@ -48,6 +48,15 @@ const resetValue = (row, col) => {
   const cell = game.find(c => c.row === row && c.col === col);
   cell.values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   cell.solved = false;
+
+  game.filter(c => !c.solved).forEach((c) => {
+    c.values = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  });
+
+  game.filter(c => c.solved).forEach((c) => {
+    setValue(c.row, c.col, c.values[0]);
+  });
+
   saveGame();
   refreshTable();
 }
